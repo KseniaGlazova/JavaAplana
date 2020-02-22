@@ -1,6 +1,15 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class Table {
-    public static void main(String[] args) {
-        int x = 1;
+    public static void main(String[] args) throws java.io.IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String a = reader.readLine();
+        int x = Integer.parseInt(a);
+        System.out.println(x + " " + x * 2 + " " + x * 3 + " " + x * 4 + " " + x * 5 + " " + x * 6 + " " + x * 7
+                + " " + x * 8 + " " + x * 9 + " " + x * 10);
+
+        /*int x = 1;
         System.out.println(x + " " + x * 2 + " " + x * 3 + " " + x * 4 + " " + x * 5 + " " + x * 6 + " " + x * 7
                 + " " + x * 8 + " " + x * 9 + " " + x * 10);
         int a = 2;
@@ -29,6 +38,6 @@ public class Table {
                 + " " + h * 8 + " " + h * 9 + " " + h * 10);
         int l = 10;
         System.out.println(l + " " + l * 2 + " " + l * 3 + " " + l * 4 + " " + l * 5 + " " + l * 6 + " " + l * 7
-                + " " + l * 8 + " " + l * 9 + " " + l * 10);
+                + " " + l * 8 + " " + l * 9 + " " + l * 10);*/
     }
 }
