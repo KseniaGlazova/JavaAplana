@@ -7,11 +7,12 @@ public class Arifmethic {
         String count1 = reader.readLine();
         String count2 = reader.readLine();
         String count3 = reader.readLine();
-        int a = Integer.parseInt(count1);
-        int b = Integer.parseInt(count2);
-        int c = Integer.parseInt(count3);
+        int x = Integer.parseInt(count1);
+        int y = Integer.parseInt(count2);
+        int z = Integer.parseInt(count3);
 
-        int d = (a+b+c) / 3;
+        int d = (x+y+z) / 3;
+        System.out.println(d);
         int e = d / 2;
 
         if (e>3) {
