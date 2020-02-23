@@ -1,21 +1,19 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class Arifmethic {
     public static void main(String[] args) throws Exception {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String count1 = reader.readLine();
-        String count2 = reader.readLine();
-        String count3 = reader.readLine();
-        int x = Integer.parseInt(count1);
-        int y = Integer.parseInt(count2);
-        int z = Integer.parseInt(count3);
+        Scanner scanner = new Scanner(System.in);
 
-        int d = (x+y+z) / 3;
-        System.out.println(d);
-        int e = d / 2;
+        int x = scanner.nextInt();
+        int y = scanner.nextInt();
+        int z = scanner.nextInt();
 
-        if (e>3) {
+        int average = (x + y + z) / 3;
+        System.out.println(average);
+        double e = average / 2;
+        int fullnum = (int) e;
+
+        if (fullnum > 3) {
             System.out.println("Программа выполнена корректно");
         }
     }

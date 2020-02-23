@@ -8,14 +8,9 @@ public class Constanta {
 
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        if (number == x) {
+        if (number == x || number == y || number == z) {
             System.out.println("Данное значение есть в константах");
-        } else if (number == y) {
-            System.out.println("Данное значение есть в константах");
-        } else if (number == z){
-            System.out.println("Данное значение есть в константах");
-        }
-        else {
+        } else {
             System.out.println("Такой константы нет!");
         }
     }
