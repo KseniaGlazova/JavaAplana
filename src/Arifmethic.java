@@ -8,10 +8,10 @@ public class Arifmethic {
         int y = scanner.nextInt();
         int z = scanner.nextInt();
 
-        int average = (x + y + z) / 3;
+        double average = (x + y + z) / 3;
         System.out.println(average);
-        double e = average / 2;
-        int fullnum = (int) e;
+        int e = (int) average / 2;
+        int fullnum = e;
 
         if (fullnum > 3) {
             System.out.println("Программа выполнена корректно");
