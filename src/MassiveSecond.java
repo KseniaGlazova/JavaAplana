@@ -17,7 +17,6 @@ public class MassiveSecond {
                 matrix[i][j] = sc.nextInt();
             }
         }
-        int x;
         for (int i = 0; i < matrix.length; i++){
             for (int j = 0; j < matrix[0].length; j++){
                 j = j * 3;
