@@ -5,11 +5,8 @@ public class Task12 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Write hier something with spaces, please: ");
         String write = sc.nextLine();
-        while (write.contains(" ")){
-            String replace = write.replace(" ", "");
-            write = replace;
-        }
-        System.out.println(write);
+        
+        System.out.println(write.replaceAll(" ", ""));
     }
 }
 
