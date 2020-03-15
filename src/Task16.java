@@ -1,14 +1,18 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class Task16 {
     public static void main(String[] args) {
-        String fileName = "Test";
-        try (BufferedReader br = new BufferedReader(new FileReader(fileName)))
+        try
         {
-            while ((fileName = br.readLine() != null)){
-            System.out.println(fileName);
+            File myFile = new File("test1");
+            FileReader fileReader = new FileReader(myFile);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                System.out.println(line);
         }
         }catch (IOException exc){
             System.out.println("Вот тут у тебя ошибка-ввода вывода: " + exc + "Проверь, где у тебя лежит файл, например");
