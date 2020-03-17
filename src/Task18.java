@@ -28,20 +28,23 @@ public class Task18 {
 
             String s;
             BufferedReader br = new BufferedReader((new InputStreamReader(System.in)));
-            System.out.println("После 7-ой строчки запись в файл производиться не будет");
+            System.out.println("После строчки #" + lineNumber + " запись в файл производиться не будет");
             FileWriter fw = new FileWriter("task18");
-            int k = 0;
+            int i;
             System.out.println("Введи свой текст, где пробел означает переход на новую строку: ");
-            s = br.readLine();
-            StringBuilder builder = new StringBuilder();
-            for(String val : s.split(" ")){
-                builder.append(val).append("\n");
-
-            }
-            fw.write(builder.toString());
+            do {
+                for (i = 0; i < lineNumber; i++) {
+                }
+                s = br.readLine();
+                if (i > lineNumber) break;
+                s = s + "\r\n";
+                fw.write(s);
+                } while (i <= lineNumber);
             fw.close();
+
+
         }catch (IOException e){
-            e.printStackTrace();
+            System.out.println("Ошибка ввода-вывода: " + e);
         }
 
     }
