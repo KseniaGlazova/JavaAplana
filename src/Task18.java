@@ -32,14 +32,12 @@ public class Task18 {
             FileWriter fw = new FileWriter("task18");
             int i;
             System.out.println("Введи свой текст, где пробел означает переход на новую строку: ");
-            do {
-                for (i = 0; i < lineNumber; i++) {
-                }
+            for (i = 0; i < lineNumber; i++) {
                 s = br.readLine();
                 if (i > lineNumber) break;
                 s = s + "\r\n";
                 fw.write(s);
-                } while (i <= lineNumber);
+            }
             fw.close();
 
 
