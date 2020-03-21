@@ -26,15 +26,12 @@ public class Task18 {
                     "Количество строк в файле: " + lineNumber);
             lineNumberReader.close();
 
-            String s;
             BufferedReader br = new BufferedReader((new InputStreamReader(System.in)));
             System.out.println("После строчки #" + lineNumber + " запись в файл производиться не будет");
             FileWriter fw = new FileWriter("task18");
-            int i;
             System.out.println("Введи свой текст, где пробел означает переход на новую строку: ");
-            for (i = 0; i < lineNumber; i++) {
-                s = br.readLine();
-                if (i > lineNumber) break;
+            for (int i = 0; i < lineNumber; i++) {
+                String s = br.readLine();
                 s = s + "\r\n";
                 fw.write(s);
             }
